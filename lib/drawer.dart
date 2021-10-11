@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'profile.dart';
 import 'echome.dart';
 import 'gallery.dart';
 import 'stack.dart';
 import 'homepage_content.dart';
-import 'profile.dart';
 
 
 class drawer_content extends StatelessWidget {

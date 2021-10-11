@@ -29,6 +29,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_search_bar: ^2.1.0
   material_floating_search_bar: ^0.3.4
+  font_awesome_flutter: ^9.1.0
 
 dev_dependencies:
   flutter_test:
@@ -51,5 +52,8 @@ flutter:
     - family: Source Sans Pro
       fonts:
         - asset: fonts/SourceSansPro-Regular.ttf
+    - family: Explora
+      fonts:
+        - asset: fonts/Explora-Regular.ttf
 
 

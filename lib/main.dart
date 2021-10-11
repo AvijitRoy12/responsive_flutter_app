@@ -5,10 +5,10 @@ import 'drawer.dart';
 import 'homepage_content.dart';
 
 void main() {
-  runApp(ResponsiveDesign());
+  runApp(Multi_Design());
 }
 
-class ResponsiveDesign extends StatelessWidget {
+class Multi_Design extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
