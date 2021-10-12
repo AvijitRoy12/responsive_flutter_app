@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'drawer.dart';
 import 'reusablecards.dart';
+import 'slider_image.dart';
 
 class HomePage_Content extends StatefulWidget {
   @override
@@ -35,6 +36,7 @@ class _HomePage_ContentState extends State<HomePage_Content> {
                   color: Colors.blueGrey,
                   height: 120.0,
                   borderRadius: BorderRadius.circular(10.0),
+                  childcard: CarouselDemo(),
                 ),
               ],
             ),

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'drawer.dart';
 import 'reusablecards.dart';
-
+import 'slider_image.dart';
 class ecHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -13,39 +13,39 @@ class ecHome extends StatelessWidget {
       drawer: Drawer(
         child: drawer_content(),
       ),
-      bottomNavigationBar: Container(
-        decoration: BoxDecoration(
-            color: Colors.white12,
-            borderRadius: BorderRadius.only(
-              topRight: Radius.circular(40.0),
-              topLeft: Radius.circular(40.0),
-            )),
-        child: BottomNavigationBar(
-          backgroundColor: Colors.black26,
-          selectedItemColor: Colors.green,
-          unselectedItemColor: Colors.white,
-          items: <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-              ),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.favorite_border,
-              ),
-              label: 'Wishlist',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person_outline_outlined,
-              ),
-              label: 'Account',
-            ),
-          ],
-        ),
-      ),
+      // bottomNavigationBar: Container(
+      //   decoration: BoxDecoration(
+      //       color: Colors.white12,
+      //       borderRadius: BorderRadius.only(
+      //         topRight: Radius.circular(40.0),
+      //         topLeft: Radius.circular(40.0),
+      //       )),
+      //   child: BottomNavigationBar(
+      //     backgroundColor: Colors.black26,
+      //     selectedItemColor: Colors.green,
+      //     unselectedItemColor: Colors.white,
+      //     items: <BottomNavigationBarItem>[
+      //       BottomNavigationBarItem(
+      //         icon: Icon(
+      //           Icons.home,
+      //         ),
+      //         label: 'Home',
+      //       ),
+      //       BottomNavigationBarItem(
+      //         icon: Icon(
+      //           Icons.favorite_border,
+      //         ),
+      //         label: 'Wishlist',
+      //       ),
+      //       BottomNavigationBarItem(
+      //         icon: Icon(
+      //           Icons.person_outline_outlined,
+      //         ),
+      //         label: 'Account',
+      //       ),
+      //     ],
+      //   ),
+      // ),
       appBar: AppBar(
         backgroundColor: Colors.black26,
         title: Text(
@@ -56,23 +56,32 @@ class ecHome extends StatelessWidget {
         child: ListView(
           children: [
             SizedBox(
-              height: 8.0,
+              height: 15.0,
             ),
             Row(
               children: [
                 ReusableCards(
-                  color: Colors.black12,
-                  height: 100.0,
+                  color: Colors.red,
+                  height: 160.0,
                   borderRadius: BorderRadius.circular(10.0),
-                  childcard: Stack(children: [
-                    Icon(Icons.add_shopping_cart,color: Colors.white,size: 50,),
-                    Text('Shopping is fun now.',style: TextStyle(color: Colors.purple,fontSize: 30,fontFamily: 'Pacifico'),)
-                  ],),
+                  childcard: CarouselDemo(),
+                  // childcard: Stack(
+                  //   children: [
+                  //     Text(
+                  //       'Shopping is fun now.',
+                  //       textAlign: TextAlign.center,
+                  //       style: TextStyle(
+                  //           color: Colors.purple,
+                  //           fontSize: 40,
+                  //           fontFamily: 'Pacifico'),
+                  //     )
+                  //   ],
+                  // ),
                 ),
               ],
             ),
             SizedBox(
-              height: 8.0,
+              height: 20.0,
             ),
             Row(
               children: [

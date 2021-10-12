@@ -13,10 +13,11 @@ class Multi_Design extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        primaryColor: Color(0xFF1B2347),
-        scaffoldBackgroundColor: Color(0xFF161A31),
-      ),
+      theme: ThemeData.dark(),
+      // theme: ThemeData.dark().copyWith(
+      //   primaryColor: Color(0xFF1B2347),
+      //   scaffoldBackgroundColor: Color(0xFF161A31),
+      // ),
       home: Scaffold(
         drawer: Drawer(
           child: drawer_content(),
