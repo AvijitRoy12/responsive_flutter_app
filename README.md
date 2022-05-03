@@ -1,4 +1,7 @@
 # multi_design
+![](Screenshots/s2.png)
+![](Screenshots/s1.png)
+![](Screenshots/s3.png)
 
 A new Flutter application.
 
